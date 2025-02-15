@@ -11,7 +11,16 @@ export interface Class {
 
 export interface Schedule {
   id: string
-  classes: Class[]
+  classes: Array<{
+    id: string
+    subject: string
+    courseCode: string
+    professor: string
+    room: string
+    time: string
+    days: string
+    mode: string
+  }>
   fitness: number
 }
 
